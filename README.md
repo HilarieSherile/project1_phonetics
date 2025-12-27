@@ -9,6 +9,11 @@ Given a word or sentence, how can phonetic transcription help a learner better u
 This project takes written text as input and outputs its corresponding IPA transcription, making pronunciation explicit and accessible—especially for learners who struggle with irregular spelling-to-sound correspondences.  
 It blends computational linguistics, phonetics, and computer science, focusing on clarity, usability, and linguistic accuracy.
 
+## Personal Motivation
+Not only am I creating this project to further my skills in Python programming and phonetics knowledge, I am also an avid language learner. From learning English up to a fluent level, I then engaged with Spanish and now Mandarin. A huge problem I encountered—and still encounter—is applying sounds from one language (like French) to another (like English), which often leads to pronunciation mistakes.  
+
+I want to develop this software to help myself with the languages I am learning as well as others, by blending IPA transcription, phonetics, and gamification to foster a love for learning and improve pronunciation skills.
+
 ## Computational Linguistics Concepts
 - **Phonetics and Phonology**: Representation of sounds using IPA symbols.  
 - **Grapheme-to-Phoneme Conversion (G2P)**: Translating written words into phonetic pronunciation.  

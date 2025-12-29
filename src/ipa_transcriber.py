@@ -1,27 +1,22 @@
-"""
-ipa_transcriber.py 
-Author: Hilarie Sielenou
 
-"""
+##ipa_transcriber.py 
+import json 
+
+#load IPA dict once 
+with open("utils/data_dict.json", "r", encoding="utf-8") as f: 
+    DATA_DICT = json.load(f)
+
 def get_ipa(word):
-    """
-    Convert a word to its IPA transcription. 
-    For MVP, i will use a placeholder dictionary. 
-    """
+    
+    ##Convert a word to its IPA transcription. 
 
-    ipa_dict = {
-        "hello": "həˈloʊ",
-        "world": "wɝːld",
-        "language": "ˈlæŋɡwɪdʒ",
-        "python": "ˈpaɪθɑn"
-    }
-    return ipa_dict.get(word.lower(), "IPA not found")
+    return DATA_DICT.get(word.lower(), "IPA not found")
 
 def main(): 
     print("Welcome to the IPA Converter!")
     
     while True: 
-        user_input = input ("Enter a word (o type 'exit' to quit): ")
+        user_input = input ("Enter a word (or type 'exit' to quit): ")
 
         if user_input.lower() == "exit":
             print("Goodbye!")
